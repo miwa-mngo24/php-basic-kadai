@@ -7,7 +7,7 @@
 <body>
     <p>
         <?php
-        //変数と平均点の計算
+        //score1~10
         $score1 = 80 ;
         $score2 = 60 ;
         $score3 = 55 ;
@@ -19,7 +19,14 @@
         $score9 = 30 ;
         $score10 = 60 ;
 
-        echo ($score1 + $score2 + $score3 + $score4 + $score5 + $score6 + $score7 + $score8 + $score9 + $score10) / 10 ;
+        //合計点算出
+        $score_total = $score1 + $score2 + $score3 + $score4 + $score5 + $score6 + $score7 + $score8 + $score9 + $score10;
+
+        //平均点算出
+        $average = $score_total / 10;
+
+        //平均点出力
+        echo $average ;
         ?>
     </p>
     
