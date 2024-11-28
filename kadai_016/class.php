@@ -20,6 +20,12 @@
                 $this->name = $name;
                 $this->price = $price;
             }
+
+            // price を出力するメソッド
+            public function show_price() {
+                echo $this->price . "<br>";
+            }
+
         }
             
             //インスタンス化する
@@ -27,11 +33,8 @@
 
             //インスタンス$foodの各プロパティを出力する
             print_r($food);
-            ?>
-    </p>
+            echo '<br>';    
 
-    <p>
-        <?php
 
         // クラスを定義する
         class Animal {
@@ -46,14 +49,27 @@
                 $this->height = $height;
                 $this->weight = $weight;
             }
+
+            // height を出力するメソッド
+            public function show_height() {
+                echo $this->height . "<br>";
+            }
         }
             
             //インスタンス化する
             $animal = new Animal('dog', 60 , 5000);
 
-            //インスタンス$foodの各プロパティを出力する
+            //インスタンス$animalの各プロパティを出力する
             print_r($animal);
-            ?>
+            echo '<br>';
+
+        // Food インスタンスの show_price メソッドを呼び出す
+        $food->show_price();
+
+        // Animal インスタンスの show_height メソッドを呼び出す
+        $animal->show_height();
+       
+?>
     </p>
     
 </body>
